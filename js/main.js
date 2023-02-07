@@ -1,5 +1,15 @@
 $(function () {
+    $(window).scroll(function () {
 
+        var scrollTop = $(this).scrollTop();
+
+        if (scrollTop > 0) {
+            $('.header').addClass('on');
+        } else {
+            $('.header').removeClass('on');
+        }
+
+    });
     $('.topBanner i').on('click', function () {
         $('.topBanner').addClass('on')
     })
