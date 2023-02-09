@@ -75,6 +75,7 @@
 }
 
 @media (max-width:768px) {
+
     .header {
         position: relative;
         top: 0;
@@ -115,7 +116,7 @@
     }
 
     .header .inner .icon {
-        margin: 0 0 0 auto;
+        display: none;
     }
 
     .header .inner .icon .icon_inner>* {
@@ -180,7 +181,7 @@
     }
 
     .mainSlide .inner h2 {
-        font-size: 27px;
+        font-size: 23px;
         font-weight: 700;
         color: #fff;
         text-indent: -4px;
@@ -297,12 +298,12 @@
 
     .mainVisual .mainSlide .slick-prev {
         transform: translate(-50%, -50%) rotate(-45deg);
-        margin: 0 0 0 -180px;
+        margin: 0 0 0 -160px;
     }
 
     .mainVisual .mainSlide .slick-next {
         transform: translate(-50%, -50%) rotate(135deg);
-        margin: 0 0 0 180px;
+        margin: 0 0 0 160px;
     }
 
 
@@ -318,7 +319,7 @@
     }
 
     .mainVisual .mainSlide .slick-dots>li {
-        display: inline-block;
+        display: none;
         margin: 0 125px 0 0;
         color: rgba(255, 255, 255, 0.6);
         font-size: 22px;
@@ -416,27 +417,27 @@
 
 @media (max-width:768px) {
     .subVisual {
-        width: 1200px;
+        width: 400px;
         margin: 0 30px;
     }
-    
+
     .subVisual .inner h3 {
         font-size: 30px;
         font-weight: 700;
         padding: 100px 0 50px 0;
     }
-    
+
     .subVisual .inner .image {
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .subVisual .box {
         position: relative;
         width: 100%;
     }
-    
+
     .subVisual .box h4 {
         position: absolute;
         bottom: 170px;
@@ -446,7 +447,7 @@
         font-weight: 700;
         line-height: 1.2em;
     }
-    
+
     .subVisual .box p {
         position: absolute;
         bottom: 120px;
@@ -535,22 +536,22 @@
 @media (max-width:768px) {
     .subBussiness {
         position: relative;
-        width: 1200px;
-        margin: 0 30px; 
+        width: 400px;
+        margin: 0 30px;
     }
-    
+
     .subBussiness h3 {
         font-size: 30px;
         font-weight: 700;
         padding: 100px 0 50px 0;
     }
-    
-    
+
+
     .subSlide .itm {
         position: relative;
         height: 450px;
     }
-    
+
     .subSlide .itm .inner {
         position: absolute;
         bottom: 0;
@@ -559,50 +560,50 @@
         background: rgba(0, 0, 0, 0.5);
         color: #fff;
     }
-    
+
     .subSlide .itm .inner p {
         position: absolute;
-        top: 50px;
-        left: 100px;
+        top: 40px;
+        left: 30px;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 15px;
         margin: 0 0 20px 0;
     }
-    
+
     .subSlide .itm .inner h4 {
         position: absolute;
-        bottom: 50px;
-        left: 100px;
+        bottom: 40px;
+        left: 30px;
         font-weight: 300;
-        font-size: 40px;
+        font-size: 28px;
     }
-    
-    
+
+
     .subSlide .itm01 {
         background: url(../img/juyo01.jpg) no-repeat center center/ cover;
     }
-    
+
     .subSlide .itm02 {
         background: url(../img/juyo02.jpg) no-repeat center center/ cover;
     }
-    
+
     .subSlide .itm03 {
         background: url(../img/juyo03.jpg) no-repeat center center/ cover;
     }
-    
+
     .subSlide .itm04 {
         background: url(../img/juyo04.jpg) no-repeat center center/ cover;
     }
-    
-    
+
+
     .subBussiness .sub_num {
         position: absolute;
-        bottom: 40px;
-        right: 100px;
+        bottom: 23px;
+        right: 0px;
         width: 50px;
         height: 50px;
         color: #fff;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: 300;
         line-height: 50px;
     }
@@ -690,6 +691,89 @@
     margin: 0 0 20px 0;
 }
 
+@media (max-width:768px) {
+    .newsRoom {
+        width: 400px;
+        padding: 100px 0;
+        margin: 0 30px;
+    }
+
+    .newsRoom .more {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .newsRoom .more h3 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 50px 0;
+    }
+
+    .newsRoom .more span {
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.03em;
+        font-weight: 400;
+    }
+
+    .newsRoom .more i {
+        margin: 0 0 0 10px;
+        color: rgb(0, 162, 255);
+    }
+
+
+
+    .newsRoom .inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .newsRoom .inner .box {
+        flex: 1;
+    }
+
+    .newsRoom .inner .box h4 {
+        font-size: 23px;
+        font-weight: 300;
+        color: #000;
+        margin: 10px 0 0 0;
+        line-height: 1.35;
+    }
+
+    .newsRoom .inner .box .link:hover {
+        color: rgb(0, 162, 255);
+        transition: 0.3s;
+    }
+
+    .newsRoom .inner .box span {
+        position: relative;
+        font-size: 14px;
+        color: #999;
+    }
+
+    .newsRoom .inner .box .date {
+        margin: 0 0 0 10px;
+    }
+
+    .newsRoom .inner .box .date::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: -8px;
+        width: 1px;
+        height: 12px;
+        transform: translate(0, -20%);
+        background: rgb(202, 202, 202);
+    }
+
+    .newsRoom .inner .box img {
+        width: 100%;
+        height: 160px;
+        margin: 0 0 20px 0;
+    }
+}
 
 /* popup */
 
@@ -784,4 +868,74 @@
     border-radius: 50%;
     border: 1px solid #ddd;
     margin: 0 10px 0 0;
+}
+
+@media (max-width:768px) {
+    .footer {
+        padding: 50px 0;
+        border-top: 1px solid rgba(165, 168, 168, 0.3);
+    }
+
+    .footer .inner {
+        position: relative;
+        width: 1200px;
+        margin: 0 30px;
+    }
+
+    .footer .list {
+        font-size: 0;
+        margin: 0 0 10px 0;
+    }
+
+    .footer .short li {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .footer .short .bold {
+        font-weight: 500;
+    }
+
+    .footer .long li {
+        display: flex;
+        margin: 10px 0;
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .footer .list li~li::before {
+        content: "";
+        display: none;
+        width: 1px;
+        height: 12px;
+        background: #ddd;
+        margin: 0 10px;
+        transform: translate(-1px, 0);
+    }
+
+
+    .footer .blue {
+        color: rgb(0, 162, 255);
+    }
+
+    .footer address {
+        font-size: 13px;
+    }
+
+    .footer .inner .right {
+        position: relative;
+        display: flex;
+    }
+
+    .footer .right i {
+        display: none;
+        font-size: 20px;
+        padding: 6px;
+        background: #565c64;
+        color: #f8f8f8;
+        border-radius: 50%;
+        border: 1px solid #ddd;
+        margin: 0 10px 0 0;
+    }
 }
